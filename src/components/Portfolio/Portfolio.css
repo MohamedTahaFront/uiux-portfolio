@@ -1,0 +1,71 @@
+.Portfolio {
+  background-color: var(--secondary-bg);
+}
+.Portfolio .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.Portfolio .info {
+  text-align: center;
+}
+.Portfolio .info p {
+  color: var(--color-gray-400);
+  font-size: 18px;
+  margin: 30px auto 0;
+}
+.Portfolio .card {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.Portfolio .card:hover {
+  box-shadow: var(--shadow);
+}
+.Portfolio .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Portfolio .card-body span {
+  color: var(--color-gray-400);
+  font-size: 12px;
+}
+.Portfolio .card-body b {
+  color: var(--color-gray-900);
+  font-size: 18px;
+}
+.Portfolio .card-body p {
+  font-size: 14px;
+  color: var(--color-gray-600);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.Portfolio .card-btn {
+  color: var(--heading-color);
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  width: fit-content;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .Portfolio .card-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.Portfolio .card-btn:hover {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  gap: 20px;
+}

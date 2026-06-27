@@ -1,0 +1,74 @@
+.About {
+  background:
+    radial-gradient(circle at center left, #9929fb40 0%, transparent 20%), #fff;
+}
+@media (max-width: 1024px) {
+  .About {
+    background:
+      radial-gradient(circle at center left, #9929fb40 0%, transparent 40%), #fff;
+  }
+}
+.About .image {
+  position: relative;
+  background-color: #f0f1f3;
+  box-shadow: 4px 4px 10px #ddd;
+  border-radius: 20px;
+}
+.About .image .media {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: #fff;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 20px #ddd;
+  gap: 5px;
+  border-radius: 8px;
+}
+.About .image .media a {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: var(--primary);
+}
+.About .image .media a:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+.About .image img {
+  max-height: 436px;
+  object-fit: contain;
+}
+.About .details {
+  color: var(--heading-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.About .details p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--color-gray-600);
+}
+@media (max-width: 1024px) {
+  .About .box > div {
+    width: 100%;
+  }
+  .About .details {
+    text-align: center;
+    align-items: center;
+  }
+  .About .box {
+    flex-direction: column;
+  }
+  .About .image {
+    width: 536px !important;
+    max-width: 100%;
+    margin: 0 auto 25px;
+  }
+}

@@ -1,0 +1,98 @@
+.Process {
+  background-color: var(--main-bg);
+}
+@media (max-width: 1200px) {
+  .Process .all-boxs {
+    flex-direction: column;
+  }
+  .Process .all-boxs > div {
+    width: 100%;
+  }
+}
+.Process .mt-24 {
+  margin-top: 24px;
+}
+.Process .mt-12 {
+  margin-top: 12px;
+}
+.Process p {
+  margin: 0;
+  color: var(--color-gray-500);
+}
+.Process b {
+  font-size: 20px;
+}
+.Process .details {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 40%;
+}
+.Process .cards {
+  width: 60%;
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 767px) {
+  .Process .cards {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .Process .details {
+    text-align: center;
+  }
+  .Process .details,
+  .Process .cards {
+    width: 100%;
+  }
+}
+.Process .cards .column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: calc((100% - 12px) / 2);
+}
+@media (max-width: 767px) {
+  .Process .cards .column {
+    width: 100%;
+  }
+}
+.Process .column .card {
+  transition: 0.3s;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .Process .column .card {
+    margin: 0 !important;
+  }
+}
+.Process .column .card:hover {
+  box-shadow: 0 0 40px #aeafb0;
+}
+.Process .column .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Process .column .card span {
+  padding: 14px 20px;
+  border-radius: 6px;
+  background-color: var(--main-bg);
+  color: var(--primary);
+  font-size: 32px;
+  width: fit-content;
+  transition: 0.3s;
+}
+.Process .column .card:hover span {
+  background-color: var(--primary);
+  color: #fff;
+}

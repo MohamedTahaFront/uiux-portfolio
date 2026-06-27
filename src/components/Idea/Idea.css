@@ -1,0 +1,47 @@
+.Idea {
+  background-color: var(--color-gray-900);
+}
+.Idea h2 {
+  width: 50%;
+  color: #fff;
+}
+.Idea p {
+  width: 50%;
+  color: #a5bcb5;
+  font-size: 18px;
+}
+@media (max-width: 1205px) {
+  .Idea p {
+    width: 75%;
+  }
+  .Idea h2 {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .Idea p {
+    width: 100%;
+  }
+  .Idea h2 {
+    width: 100%;
+    font-weight: normal;
+  }
+}
+@media (max-width: 550px) {
+  .Idea p {
+    font-size: 14px;
+  }
+  .Idea h2 {
+    font-size: 24px !important;
+  }
+  .Idea button {
+    font-size: 12px !important;
+  }
+}
+.Idea .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}

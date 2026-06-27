@@ -1,0 +1,52 @@
+.Blog {
+  background-color: var(--secondary-bg);
+}
+.Blog .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Blog .info {
+  text-align: center;
+}
+.Blog .info p {
+  color: var(--color-gray-400);
+  font-size: 18px;
+  margin: 30px auto 0;
+}
+.Blog img {
+  height: 200px;
+  max-width: 100%;
+}
+.Blog .card {
+  overflow: hidden !important;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.Blog .card:hover {
+  box-shadow: var(--shadow);
+}
+.Blog .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Blog .card-body span {
+  color: var(--color-gray-400);
+  font-size: 12px;
+}
+.Blog .card-body b {
+  font-weight: normal;
+  color: var(--color-gray-900);
+  font-size: 16px;
+}
+
+.Blog .mySwiper {
+  padding: 40px 0 50px;
+}
+.Blog .swiper-pagination-bullet-active {
+  transition: 0.2s;
+  width: 30px;
+  border-radius: 6px;
+  background: var(--primary);
+}

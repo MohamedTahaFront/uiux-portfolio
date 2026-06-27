@@ -1,0 +1,76 @@
+.Happy {
+  background-color: var(--secondary-bg);
+}
+.Happy .container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.Happy .info {
+  text-align: center;
+}
+.Happy .info p {
+  color: var(--color-gray-400);
+  font-size: 18px;
+  margin: 30px auto 0;
+}
+.Happy-swiper {
+  width: 100%;
+}
+.Happy-swiper .swiper-wrapper {
+  transition-timing-function: linear;
+  padding-top: 40px;
+}
+.Happy-swiper img {
+  object-fit: contain;
+  width: 160px;
+  max-width: 100%;
+}
+
+.Happy .last .title {
+  text-align: center;
+}
+.Happy .box {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 18px;
+  color: var(--heading-color);
+}
+.Happy .box .details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Happy .box .details p {
+  font-size: 18px;
+  color: #87909d;
+  font-weight: 500;
+}
+.Happy .box > p {
+  font-weight: 500;
+}
+.Happy .box .down {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Happy .box .down p:nth-child(1) {
+  font-weight: 500;
+}
+.Happy .box .down p:nth-child(2) {
+  font-size: 16px;
+}
+
+.down-swiper {
+  padding: 25px 0 50px !important;
+  width: 100%;
+}
+.Happy .swiper-pagination-bullet-active {
+  transition: 0.2s;
+  width: 30px;
+  border-radius: 6px;
+  background: var(--primary);
+}

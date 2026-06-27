@@ -1,0 +1,132 @@
+.Contact p {
+  margin: 0;
+}
+.Contact {
+  background-color: var(--main-bg);
+}
+.Contact .box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Contact .head {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--color-gray-400);
+}
+.Contact .head .title {
+  color: var(--heading-color);
+}
+.Contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.Contact .info small {
+  color: var(--color-gray-500);
+}
+.Contact .info .info-row {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.Contact .info .info-row:hover {
+  box-shadow: 0 0 40px #aeafb0;
+}
+.Contact .info .info-row span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #ac56f759;
+  color: var(--primary);
+}
+
+.Contact .media {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+.Contact .media a {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: var(--primary);
+}
+.Contact .media a:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .Contact {
+    text-align: center;
+  }
+  .Contact .media {
+    margin: auto;
+  }
+}
+.Contact .form-box {
+  color: var(--color-gray-400);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+.Contact form textarea,
+.Contact form input {
+  transition: 0.3s;
+  border-bottom: 2px solid var(--color-gray-300);
+  background-color: transparent;
+  padding: 10px 0;
+  font-size: 18px;
+  width: 100%;
+}
+.Contact form textarea:focus,
+.Contact form input:focus {
+  border-bottom: 2px solid var(--primary);
+}
+.Contact form textarea:focus::placeholder,
+.Contact form input:focus::placeholder {
+  color: var(--primary);
+}
+.Contact form .group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Contact form .group .Budget {
+  width: 40%;
+}
+.Contact form textarea {
+  resize: none;
+  height: 50px;
+}
+.Contact form button {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .Contact form .group {
+    flex-direction: column;
+  }
+  .Contact form .group .Budget {
+    width: 100%;
+  }
+  .Contact form button {
+    margin: auto;
+    gap: 10px;
+  }
+}

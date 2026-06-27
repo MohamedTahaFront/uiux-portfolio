@@ -1,0 +1,101 @@
+:root {
+  --primary: #9929fb;
+  --primary-dark: #650fa0;
+  --main-bg: #f0f1f3;
+  --secondary-bg: #fff;
+  --heading-color: oklch(21% 0.006 285.885);
+  --color-gray-100: oklch(0.967 0.003 264.542);
+  --color-gray-200: oklch(0.928 0.006 264.531);
+  --color-gray-300: oklch(0.872 0.01 258.338);
+  --color-gray-400: oklch(0.707 0.022 261.325);
+  --color-gray-500: oklch(0.551 0.027 264.364);
+  --color-gray-600: oklch(0.446 0.03 256.802);
+  --color-gray-700: oklch(0.373 0.034 259.733);
+  --color-gray-900: oklch(0.21 0.034 264.665);
+  --shadow: 0 25px 25px #00000026;
+}
+footer {
+  background-color: #2a374a;
+}
+footer p {
+  margin: 0;
+}
+footer * {
+  color: var(--color-gray-200);
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.top-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+footer .logo span {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: 50%;
+  font-size: 24px;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+footer .box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+footer .links .link {
+  position: relative;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: 0.3s;
+  display: block;
+}
+footer .links .link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: var(--color-gray-200);
+  transition: 0.3s;
+}
+footer .links .link:hover::after {
+  width: 100%;
+}
+.footer-down {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .top-footer ,
+    .footer-down {
+        justify-content: center;
+        flex-direction: column;
+        gap: 28px;
+        text-align: center;
+    }
+}

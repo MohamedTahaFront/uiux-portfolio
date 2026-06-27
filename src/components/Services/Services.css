@@ -1,0 +1,57 @@
+.Services {
+  background-color: var(--main-bg);
+}
+.Services p {
+  margin: 0;
+  color: var(--color-gray-500);
+}
+
+.Services .details {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .Services .details {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.Services .rows {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Services .info-row {
+  position: relative;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.Services .info-row:hover {
+  box-shadow: 0 0 40px #aeafb0;
+}
+.Services .info-row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--primary);
+  transition: 0.3s;
+}
+.Services .info-row:hover::after {
+  width: 5px;
+}
+.Services .info-row h4 {
+  color: var(--color-gray-900);
+}
+.Services .info-row p {
+  color: var(--color-gray-700);
+}
