@@ -23,6 +23,7 @@ function Home({setNav}) {
     const handleNav = ()=>{
       const trigger = window.innerHeight / 2
 
+      const contactRect = contactRef.current.getBoundingClientRect()
       const servicesRect = servicesRef.current.getBoundingClientRect()
       const blogRect = blogRef.current.getBoundingClientRect()
       const portfolioRect = portfolioRef.current.getBoundingClientRect()
@@ -30,8 +31,9 @@ function Home({setNav}) {
       const aboutRect = aboutRef.current.getBoundingClientRect()
       const headerRect = headerRef.current.getBoundingClientRect()
 
-
-      if (servicesRect.top <= trigger && servicesRect.bottom > trigger ) {
+      if (contactRect.top <= trigger && contactRect.bottom > trigger ) {
+        setNav("contact")
+      }else if (servicesRect.top <= trigger && servicesRect.bottom > trigger ) {
         setNav("services")
       }else if (blogRect.top <= trigger && blogRect.bottom > trigger ) {
         setNav("blog")
